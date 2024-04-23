@@ -1,0 +1,17 @@
+.card{
+    width: 100% !important;
+    z-index: -1;
+}
+.card img{
+    width: 100%;
+}
+/* @media (max-width:992px) {
+    .card{
+        width: 20rem !important;
+    }
+}
+@media (max-width:576px) {
+    .card{
+        width: 18rem !important;
+    }
+} */

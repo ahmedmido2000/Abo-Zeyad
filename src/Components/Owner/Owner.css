@@ -1,0 +1,31 @@
+.owner{
+    background: url(../../../public/blue-and-white-modern-real-estate-poster-5@2x.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.owner-text{
+    position: absolute;
+    max-width: 400px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.owner-text .btn-primary{
+    cursor: pointer !important;
+}
+.owner-text .btn-primary a{
+    text-decoration: none;
+}
+@media (max-width:992px) {
+    .owner-text{
+        top: 30%;
+    }
+}

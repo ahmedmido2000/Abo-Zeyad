@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "price": "4,000 جنيه",
+      "address": "شقة للإيجار فى المساكن عمارة 25 شقة رقم 6 .",
+      "rooms":6,
+      "beds":8,
+      "finishing":"سوبر لوكس",
+      "ventilation":"مكيف",
+      "invoices":"شامل",
+      "imageUrl": "/1.webp"
+    },
+    {
+      "id": 2,
+      "price": "3,000 جنيه",
+      "address": "شقة للإيجار فى المساكن عمارة 12 شقة رقم 10 .",
+      "rooms":6,
+      "beds":8,
+      "finishing":"سوبر لوكس",
+      "ventilation":"مكيف",
+      "invoices":"شامل",
+      "imageUrl": "/2.webp"
+    },
+    {
+      "id": 3,
+      "price": "6,000 جنيه",
+      "address": "شقة للإيجار فى المساكن عمارة 6 شقة رقم 3 .",
+      "rooms":6,
+      "beds":8,
+      "finishing":"سوبر لوكس",
+      "ventilation":"مكيف",
+      "invoices":"شامل",
+      "imageUrl": "/3.jpg"
+    },
+    {
+      "id": 4,
+      "price": "8,000 جنيه",
+      "address": "شقة للإيجار فى المساكن عمارة 14 شقة رقم 26 .",
+      "rooms":6,
+      "beds":8,
+      "finishing":"سوبر لوكس",
+      "ventilation":"مكيف",
+      "invoices":"شامل",
+      "imageUrl": "/bg.jpeg"
+    },
+    {
+      "id": 5,
+      "price": "5,000 جنيه",
+      "address": "شقة للإيجار فى المساكن عمارة 1 شقة رقم 8 .",
+      "rooms":6,
+      "beds":8,
+      "finishing":"سوبر لوكس",
+      "ventilation":"مكيف",
+      "invoices":"شامل",
+      "imageUrl": "/1.webp"
+    },
+    {
+      "id": 6,
+      "price": "3,500 جنيه",
+      "address": "شقة للإيجار فى المساكن عمارة 28 شقة رقم 1 .",
+      "rooms":6,
+      "beds":8,
+      "finishing":"سوبر لوكس",
+      "ventilation":"مكيف",
+      "invoices":"شامل",
+      "imageUrl": "/2.webp"
+    }
+  ]
