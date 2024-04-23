@@ -17,10 +17,10 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="index.php" className="text-primary">الرئيسية</Nav.Link>
-            <Nav.Link href="#category" className="text-primary">من نحن</Nav.Link>
-            <Nav.Link href="#category" className="text-primary">العقارات</Nav.Link>
-            <Nav.Link href="#footer" className="text-primary">اتصل بنا</Nav.Link>
+            <Nav.Link href="#" className="text-primary">الرئيسية</Nav.Link>
+            <Nav.Link href="#about" className="text-primary">من نحن</Nav.Link>
+            <Nav.Link href="#cards" className="text-primary">العقارات</Nav.Link>
+            <Nav.Link href="#owner" className="text-primary">اتصل بنا</Nav.Link>
           </Nav>
         <div className="links">
           <a target='_blank' href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a>

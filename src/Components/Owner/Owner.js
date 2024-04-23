@@ -4,7 +4,7 @@ import './Owner.css';
 const Owner = () => {
   return (
     <div>
-      <section className="owner mt-5">
+      <section className="owner mt-5" id='owner'>
         <div className="owner-text">
           <h2>هل أنت مالك ؟</h2>
           <p>إذا كنت من ملاك العقارات في محافظة قنا وترغب في تأجيرها للطلاب، فعليك التواصل معنا لعرض العقار الخاص بك على موقعنا.</p>

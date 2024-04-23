@@ -11,7 +11,7 @@ const Cards = () => {
     }, []);
   return (
     <div>
-      <section className="text-center mt-5 mb-5">
+      <section className="text-center mt-5 mb-5" id="cards">
         <div className="container">
           <div className="head">
             <h2 className="m-5" style={{ color: "#00204A" }}>

@@ -15,52 +15,48 @@ const CardDetails = () => {
                 <div className="col-12 text-left mb-2">
     <div className="card m-auto">
         <Carousel>
-            <Carousel.Item>
-                <img src='/1.webp' className='w-100 img-fluid' style={{height:"400px"}} text="First slide" />
+                {card.imageList.map(img=>(
+            <Carousel.Item key={img}>
+                    <img src={img} className='w-100 img-fluid' style={{height:"400px"}} text="First slide" />
             </Carousel.Item>
-            <Carousel.Item>
-                <img src='/2.webp' className='w-100 img-fluid' style={{height:"400px"}} text="Second slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src='/3.jpg' className='w-100 img-fluid' style={{height:"400px"}} text="Third slide" />
-            </Carousel.Item>
+                ))}
         </Carousel>
         <div className="card-body">
             <div className='row mt-3'>
-                <div className='d-flex justify-content-between col-6'>
+                <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#00204A'}}>عدد الغرف</p>
                     <p className="card-text" style={{color:'#005792'}}>{card.rooms}</p>
                 </div>
-                <div className='d-flex justify-content-between col-6'>
+                <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#00204A'}}>عدد السراير</p>
                     <p className="card-text" style={{color:'#005792'}}>{card.beds}</p>
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex justify-content-between col-6'>
+                <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#00204A'}}>التشطيب</p>
                     <p className="card-text" style={{color:'#005792'}}>{card.finishing}</p>
                 </div>
-                <div className='d-flex justify-content-between col-6'>
+                <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#00204A'}}>التهوية</p>
                     <p className="card-text" style={{color:'#005792'}}>{card.ventilation}</p>
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex justify-content-between col-6'>
+                <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#00204A'}}>الفواتير</p>
                     <p className="card-text" style={{color:'#005792'}}>{card.invoices}</p>
                 </div>
-                <div className='d-flex justify-content-between col-6'>
+                <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#00204A'}}>السعر</p>
                     <p className="card-text" style={{color:'#005792'}}>{card.price}</p>
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex gap-2'>
+                <div className='d-flex gap-2 mt-2'>
                     <p className="card-text fw-bold text-end">العنوان </p>
                     <p className="card-text fw-bold text-end">: </p>
-                    <p className="card-text text-end" style={{color:'#005792'}}>{card.address}</p>
+                    <p className="card-text text-end" style={{color:'#005792'}}>{card.fullAddress}</p>
                 </div>
             </div>
         </div>
