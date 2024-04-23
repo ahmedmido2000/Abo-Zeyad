@@ -27,6 +27,12 @@
       "finishing":"سوبر لوكس",
       "ventilation":"مكيف",
       "invoices":"شامل",
+            "imageList":[
+        "/1.webp",
+        "/2.webp",
+        "/3.jpg",
+        "/bg.jpeg"
+],
       "imageUrl": "/2.webp"
     },
     {
@@ -39,6 +45,12 @@
       "finishing":"سوبر لوكس",
       "ventilation":"مكيف",
       "invoices":"شامل",
+            "imageList":[
+        "/1.webp",
+        "/2.webp",
+        "/3.jpg",
+        "/bg.jpeg"
+],
       "imageUrl": "/3.jpg"
     },
     {
@@ -51,6 +63,12 @@
       "finishing":"سوبر لوكس",
       "ventilation":"مكيف",
       "invoices":"شامل",
+            "imageList":[
+        "/1.webp",
+        "/2.webp",
+        "/3.jpg",
+        "/bg.jpeg"
+],
       "imageUrl": "/bg.jpeg"
     },
     {
@@ -63,6 +81,12 @@
       "finishing":"سوبر لوكس",
       "ventilation":"مكيف",
       "invoices":"شامل",
+            "imageList":[
+        "/1.webp",
+        "/2.webp",
+        "/3.jpg",
+        "/bg.jpeg"
+],
       "imageUrl": "/1.webp"
     },
     {
@@ -75,6 +99,12 @@
       "finishing":"سوبر لوكس",
       "ventilation":"مكيف",
       "invoices":"شامل",
+            "imageList":[
+        "/1.webp",
+        "/2.webp",
+        "/3.jpg",
+        "/bg.jpeg"
+],
       "imageUrl": "/2.webp"
     }
   ]
