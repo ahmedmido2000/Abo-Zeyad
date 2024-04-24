@@ -31,12 +31,12 @@ const Cards = () => {
                   <div className="row pt-1 mt-2 border-top">
                     <div className="col-4">الغرف</div>
                     <div className="col-4 ">السراير</div>
-                    <div className="col-4">التشطيب</div>
+                    <div className="col-4">الكود</div>
                   </div>
                   <div className="row">
                     <div className="col-4">{card.rooms}</div>
                     <div className="col-4">{card.beds}</div>
-                    <div className="col-4">{card.finishing}</div>
+                    <div className="col-4">{card.code}</div>
                   </div>
                   <NavLink className="btn btn-primary" to={`/card/${card.id}`}>معاينة</NavLink>
                 </div>

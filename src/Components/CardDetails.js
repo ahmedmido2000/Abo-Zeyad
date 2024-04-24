@@ -53,10 +53,21 @@ const CardDetails = () => {
                 </div>
             </div>
             <div className='row'>
+                <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#00204A'}}>الكود</p>
+                    <p className="card-text" style={{color:'#005792'}}>{card.code}</p>
+                </div>
+            </div>
+            <div className='row'>
                 <div className='d-flex gap-2 mt-2'>
                     <p className="card-text fw-bold text-end">العنوان </p>
                     <p className="card-text fw-bold text-end">: </p>
                     <p className="card-text text-end" style={{color:'#005792'}}>{card.fullAddress}</p>
+                </div>
+            </div>
+            <div className='row justify-content-center'>
+                <div className="btn btn-primary mt-2" style={{width:"150px"}}>
+                    <a href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0" className='text-white ' target='_blank'>تواصل معنا</a>
                 </div>
             </div>
         </div>
