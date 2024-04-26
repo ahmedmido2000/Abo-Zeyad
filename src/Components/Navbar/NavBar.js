@@ -13,20 +13,20 @@ const NavBar = () => {
       <header>
       <Navbar bg="light" expand="lg">
       <div className="container">
-        <Navbar.Brand href="#" className="text-primary">سكن قنا</Navbar.Brand>
+        <Navbar.Brand href="#" style={{color:'#3D63DD'}}>سكن قنا</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="#" className="text-primary">الرئيسية</Nav.Link>
-            <Nav.Link href="#about" className="text-primary">من نحن</Nav.Link>
-            <Nav.Link href="#cards" className="text-primary">العقارات</Nav.Link>
-            <Nav.Link href="#owner" className="text-primary">اتصل بنا</Nav.Link>
+            <Nav.Link href="#" style={{color:'#3D63DD'}}>الرئيسية</Nav.Link>
+            <Nav.Link href="#about" style={{color:'#3D63DD'}}>من نحن</Nav.Link>
+            <Nav.Link href="#cards" style={{color:'#3D63DD'}}>العقارات</Nav.Link>
+            <Nav.Link href="#owner" style={{color:'#3D63DD'}}>اتصل بنا</Nav.Link>
           </Nav>
         <div className="links">
-          <a target='_blank' href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a>
-          <a target='_blank' href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram} /></a>
-          <a target='_blank' href="https://www.facebook.com/profile.php?id=100010113310839&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a>
-          <a target='_blank' href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+          <a target='_blank' style={{color:'#3D63DD'}} href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a>
+          <a target='_blank' style={{color:'#3D63DD'}} href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram} /></a>
+          <a target='_blank' style={{color:'#3D63DD'}} href="https://www.facebook.com/profile.php?id=100010113310839&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a>
+          <a target='_blank' style={{color:'#3D63DD'}} href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
         </div>
         </Navbar.Collapse>
       </div>

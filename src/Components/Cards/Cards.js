@@ -14,7 +14,7 @@ const Cards = () => {
       <section className="text-center mt-5 mb-5" id="cards">
         <div className="container">
           <div className="head">
-            <h2 className="m-5" style={{ color: "#00204A" }}>
+            <h2 className="m-5" style={{color:'#3D63DD'}}>
               الشقق المعروضة
             </h2>
           </div>
@@ -24,21 +24,21 @@ const Cards = () => {
               <div className="card h-100" style={{ width: "18rem" }}>
                 <img className="card-img-top" src={card.imageUrl} alt="Card image cap" />
                 <div className="card-body">
-                  <h5 className="card-title">{card.price}</h5>
+                  <h5 className="card-title" style={{color:'#3D63DD'}}>{card.price}</h5>
                   <p className="card-text">
                   {card.address}
                  </p>
                   <div className="row pt-1 mt-2 border-top">
-                    <div className="col-4">الغرف</div>
-                    <div className="col-4 ">السراير</div>
-                    <div className="col-4">الكود</div>
+                    <div className="col-4" style={{color:'#3D63DD'}}>الغرف</div>
+                    <div className="col-4 " style={{color:'#3D63DD'}}>السراير</div>
+                    <div className="col-4" style={{color:'#3D63DD'}}>الكود</div>
                   </div>
                   <div className="row">
                     <div className="col-4">{card.rooms}</div>
                     <div className="col-4">{card.beds}</div>
                     <div className="col-4">{card.code}</div>
                   </div>
-                  <NavLink className="btn btn-primary" to={`/card/${card.id}`}>معاينة</NavLink>
+                  <NavLink className="btn text-light" style={{backgroundColor:'#3D63DD'}} to={`/card/${card.id}`}>معاينة</NavLink>
                 </div>
               </div>
             </div>
