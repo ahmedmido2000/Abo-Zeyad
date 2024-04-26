@@ -13,7 +13,7 @@ const NavBar = () => {
       <header>
       <Navbar bg="light" expand="lg">
       <div className="container">
-        <Navbar.Brand href="#" style={{color:'#3D63DD'}}>سكن قنا</Navbar.Brand>
+        <Navbar.Brand href="#" className='fw-bold' style={{color:'#3D63DD'}}>سكن قنا</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">

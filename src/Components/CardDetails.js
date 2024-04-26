@@ -24,45 +24,45 @@ const CardDetails = () => {
         <div className="card-body">
             <div className='row mt-3'>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>عدد الغرف</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.rooms}</p>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>عدد الغرف</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.rooms}</p>
                 </div>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>عدد السراير</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.beds}</p>
-                </div>
-            </div>
-            <div className='row'>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>التشطيب</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.finishing}</p>
-                </div>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>التهوية</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.ventilation}</p>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>عدد السراير</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.beds}</p>
                 </div>
             </div>
             <div className='row'>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>الفواتير</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.invoices}</p>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>التشطيب</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.finishing}</p>
                 </div>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>السعر</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.price}</p>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>التهوية</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.ventilation}</p>
                 </div>
             </div>
             <div className='row'>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#00204A'}}>الكود</p>
-                    <p className="card-text" style={{color:'#005792'}}>{card.code}</p>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الفواتير</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.invoices}</p>
+                </div>
+                <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>السعر</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.price}</p>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الكود</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.code}</p>
                 </div>
             </div>
             <div className='row'>
                 <div className='d-flex gap-2 mt-2'>
-                    <p className="card-text fw-bold text-end">العنوان </p>
-                    <p className="card-text fw-bold text-end">: </p>
-                    <p className="card-text text-end" style={{color:'#005792'}}>{card.fullAddress}</p>
+                    <p className="card-text fw-bold text-end" style={{color:'#3D63DD'}}>العنوان </p>
+                    <p className="card-text fw-bold text-end" style={{color:'#3D63DD'}}>: </p>
+                    <p className="card-text text-end" style={{color:'#04041b'}}>{card.fullAddress}</p>
                 </div>
             </div>
             <div className='row justify-content-center'>
