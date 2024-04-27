@@ -14,7 +14,7 @@ const Cards = () => {
       <section className="text-center mt-5 mb-5" id="cards">
         <div className="container">
           <div className="head">
-            <h2 className="m-5" style={{color:'#3D63DD'}}>
+            <h2 className="m-5 fw-bold" style={{color:'#3D63DD'}}>
               الشقق المعروضة
             </h2>
           </div>

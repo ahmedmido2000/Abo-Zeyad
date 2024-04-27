@@ -9,7 +9,7 @@ body{
     margin-bottom: 0 !important ;
 }
 header{
-    background: url(../../../public/2.webp);
+    background: url(../../../public/Screenshot_2023-08-26_115925-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -68,7 +68,7 @@ header{
    */
  @media (max-width:570px) {
     header{
-        min-height: 45vh;
+        min-height: 40vh;
     }
     #brand{
         font-size: 15px !important;
@@ -79,7 +79,7 @@ header{
 } 
 @media (max-width:495px) {
     header{
-        min-height: 35vh !important;
+        min-height: 30vh !important;
     }
   }
 
