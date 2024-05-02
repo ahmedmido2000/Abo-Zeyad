@@ -23,8 +23,109 @@
 .owner-text .btn a{
     text-decoration: none !important;
 }
+
 @media (max-width:992px) {
+    .owner{
+        background-size: contain;
+        height:  93vh;
+    }
+}
+@media (max-width:950px) {
+    .owner{
+        height:  88vh;
+    }
+}
+
+@media (max-width:767px) {
     .owner-text{
-        top: 30%;
+        top: 40%;
+    }
+    .owner-text h2{
+       font-size: 22px;
+    }
+    .owner-text p{
+       font-size: 12px;
+    }
+}
+
+
+@media (max-width:910px) {
+    .owner{
+        height: 85vh;
+    }
+  }
+@media (max-width:890px) {
+    .owner{
+        height: 83vh;
+    }
+  }
+@media (max-width:860px) {
+    .owner{
+        height: 80vh;
+    }
+  }
+@media (max-width:830px) {
+    .owner{
+        height: 78vh;
+    }
+  }
+@media (max-width:800px) {
+    .owner{
+        height: 75vh;
+    }
+  }
+  @media (max-width:767px) {
+      .owner{
+        height: 72vh;
+    }
+}
+  @media (max-width:725px) {
+      .owner{
+        height: 70vh;
+    }
+}
+@media (max-width:685px) {
+    .owner{
+        height: 67vh;
+    }
+}
+@media (max-width:625px) {
+    .owner{
+        height: 65vh;
+    }
+}
+@media (max-width:585px) {
+    .owner{
+        height: 60vh;
+    }
+}
+@media (max-width:555px) {
+    .owner{
+        height: 58vh;
+    }
+}
+@media (max-width:530px) {
+    .owner{
+        height: 55vh;
+    }
+}
+@media (max-width:500px) {
+    .owner{
+        height: 52vh;
+    }
+}
+@media (max-width:470px) {
+    .owner{
+        height: 50vh;
+    }
+}
+@media (max-width:450px) {
+    .owner{
+        height: 48vh;
+    }
+}
+@media (max-width:430px) {
+    .owner{
+        height: 45vh;
     }
 }
