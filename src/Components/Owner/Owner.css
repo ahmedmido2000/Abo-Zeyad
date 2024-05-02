@@ -38,7 +38,7 @@
 
 @media (max-width:767px) {
     .owner-text{
-        top: 5%;
+        top: 5% !important;
     }
     .owner-text h2{
        font-size: 22px;
@@ -129,3 +129,8 @@
         height: 45vh;
     }
 }
+@media (max-width:405px) {
+    .owner-text{
+        top: 0% !important;
+    }
+    }
