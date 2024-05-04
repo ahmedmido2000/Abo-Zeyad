@@ -12,14 +12,14 @@ const CardDetails = () => {
     <div>
         {card && (
                 <>
-                <div className="col-12 text-left mb-2">
-    <div className="card m-auto">
+                <div className="col-md-8 m-auto text-left mb-2">
+    <div className="card  m-auto">
         <Carousel>
-                {card.imageList.map(img=>(
-            <Carousel.Item key={img}>
-                    <img src={img} className='w-100 img-fluid' style={{height:"400px"}} text="First slide" />
-            </Carousel.Item>
-                ))}
+                    {card.imageList.map(img=>(
+                <Carousel.Item key={img}>
+                        <img src={img} className='w-100 img-fluid' style={{height:"600px"}} text="First slide" />
+                </Carousel.Item>
+                    ))}
         </Carousel>
         <div className="card-body">
             <div className='row mt-3'>
@@ -33,9 +33,9 @@ const CardDetails = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>التشطيب</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.finishing}</p>
+            <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الدور</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.floar}</p>
                 </div>
                 <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#3D63DD'}}>التهوية</p>
@@ -56,6 +56,10 @@ const CardDetails = () => {
                 <div className='d-flex justify-content-between col-md-6'>
                     <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الكود</p>
                     <p className="card-text" style={{color:'#04041b'}}>{card.code}</p>
+                </div>
+                <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>واى فاى</p>
+                    <p className="card-text" style={{color:'#04041b'}}>{card.wifi}</p>
                 </div>
             </div>
             <div className='row'>
