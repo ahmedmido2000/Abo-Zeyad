@@ -6,7 +6,7 @@ import Cards from './Components/Cards/Cards';
 import Footer from './Components/Footer/Footer';
 const HomePage = () => {
   return (
-    <div>
+    <div style={{backgroundColor:'#000'}}>
     <NavBar/>
     <About/>
     <Cards/>

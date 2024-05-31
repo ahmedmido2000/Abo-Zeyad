@@ -14,31 +14,31 @@ const Cards = () => {
       <section className="text-center mt-5 mb-5" id="cards">
         <div className="container">
           <div className="head">
-            <h2 className="m-5 fw-bold" style={{color:'#3D63DD'}}>
+            <h2 className="m-5 fw-bold" style={{color:'#FCDF5F'}}>
               الشقق المعروضة
             </h2>
           </div>
           <div className="row m-auto">
           {cards.map(card => (
             <div className="col-xl-3 col-lg-4 col-md-6 mb-2" key={card.id}>
-              <div className="card h-100" style={{ width: "18rem" }}>
+              <div className="card h-100" style={{ width: "18rem",backgroundColor:'#0D0D0D',border:'2px solid #FCDF5F' }}>
                 <img className="card-img-top" src={card.imageUrl} alt="Card image cap" />
                 <div className="card-body">
-                  <h5 className="card-title" style={{color:'#3D63DD'}}>{card.price}</h5>
-                  <p className="card-text">
+                  <h5 className="card-title" style={{color:'#FCDF5F'}}>{card.price}</h5>
+                  <p className="card-text text-white">
                   {card.address}
                  </p>
                   <div className="row pt-1 mt-2 border-top">
-                    <div className="col-4" style={{color:'#3D63DD'}}>الغرف</div>
-                    <div className="col-4 " style={{color:'#3D63DD'}}>السراير</div>
-                    <div className="col-4" style={{color:'#3D63DD'}}>الكود</div>
+                    <div className="col-4" style={{color:'#FCDF5F'}}>الغرف</div>
+                    <div className="col-4 " style={{color:'#FCDF5F'}}>السراير</div>
+                    <div className="col-4" style={{color:'#FCDF5F'}}>الكود</div>
                   </div>
                   <div className="row">
-                    <div className="col-4">{card.rooms}</div>
-                    <div className="col-4">{card.beds}</div>
-                    <div className="col-4">{card.code}</div>
+                    <div className="col-4 text-white">{card.rooms}</div>
+                    <div className="col-4 text-white">{card.beds}</div>
+                    <div className="col-4 text-white">{card.code}</div>
                   </div>
-                  <NavLink className="btn text-light" style={{backgroundColor:'#3D63DD'}} to={`/card/${card.id}`}>معاينة</NavLink>
+                  <NavLink className="btn text-dark" style={{backgroundColor:'#FCDF5F'}} to={`/card/${card.id}`}>معاينة</NavLink>
                 </div>
               </div>
             </div>

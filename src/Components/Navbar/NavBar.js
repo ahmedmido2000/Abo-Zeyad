@@ -11,22 +11,25 @@ const NavBar = () => {
   return (
     <div>
       <header>
-      <Navbar bg="light" expand="lg">
+      <Navbar style={{backgroundColor:'#000'}} expand="lg">
       <div className="container">
-        <Navbar.Brand href="#" className='fw-bold' style={{color:'#3D63DD'}}>سكن قنا</Navbar.Brand>
+      <Navbar.Brand href="#" className="fw-bold">
+  <img src={`${process.env.PUBLIC_URL}/img.png`} style={{width:'100px'}} className='p-0 m-0 img-fluid' alt="logo" />
+</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="#" style={{color:'#3D63DD'}}>الرئيسية</Nav.Link>
-            <Nav.Link href="#about" style={{color:'#3D63DD'}}>من نحن</Nav.Link>
-            <Nav.Link href="#cards" style={{color:'#3D63DD'}}>العقارات</Nav.Link>
-            <Nav.Link href="#owner" style={{color:'#3D63DD'}}>اتصل بنا</Nav.Link>
+            <Nav.Link href="#" style={{color:'#FCDF5F'}}>الرئيسية</Nav.Link>
+            <Nav.Link href="#about" style={{color:'#FCDF5F'}}>من نحن</Nav.Link>
+            <Nav.Link href="#cards" style={{color:'#FCDF5F'}}>العقارات</Nav.Link>
+            <Nav.Link href="#owner" style={{color:'#FCDF5F'}}>اتصل بنا</Nav.Link>
           </Nav>
         <div className="links">
-          <a target='_blank' style={{color:'#3D63DD'}} href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a>
-          <a target='_blank' style={{color:'#3D63DD'}} href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram} /></a>
-          <a target='_blank' style={{color:'#3D63DD'}} href="https://www.facebook.com/profile.php?id=100010113310839&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a>
-          <a target='_blank' style={{color:'#3D63DD'}} href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+          <a target='_blank' style={{color:'#FCDF5F'}} href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a>
+          <a target='_blank' style={{color:'#FCDF5F'}} href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram} /></a>
+          <a target='_blank' style={{color:'#FCDF5F'}} href="https://www.facebook.com/profile.php?id=100010113310839&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a>
+          <a target='_blank' style={{color:'#FCDF5F'}} href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
         </div>
         </Navbar.Collapse>
       </div>

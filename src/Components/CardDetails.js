@@ -9,11 +9,11 @@ const CardDetails = () => {
         setCard(CardsFile.find(card => card.id === parseInt(id)));
     }, []);
   return (
-    <div>
+    <div className='mb-0 pb-0' style={{backgroundColor:'#000'}}>
         {card && (
                 <>
-                <div className="col-md-8 m-auto text-left mb-2">
-    <div className="card  m-auto">
+                <div className="col-md-8 m-auto text-left">
+    <div className="card m-auto"  style={{backgroundColor:'#0D0D0D',border:'2px solid #FCDF5F'}}>
         <Carousel>
                     {card.imageList.map(img=>(
                 <Carousel.Item key={img}>
@@ -24,54 +24,54 @@ const CardDetails = () => {
         <div className="card-body">
             <div className='row mt-3'>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>عدد الغرف</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.rooms}</p>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>عدد الغرف</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.rooms}</p>
                 </div>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>عدد السراير</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.beds}</p>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>عدد السراير</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.beds}</p>
                 </div>
             </div>
             <div className='row'>
             <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الدور</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.floar}</p>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الدور</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.floar}</p>
                 </div>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>التهوية</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.ventilation}</p>
-                </div>
-            </div>
-            <div className='row'>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الفواتير</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.invoices}</p>
-                </div>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>السعر</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.price}</p>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>التهوية</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.ventilation}</p>
                 </div>
             </div>
             <div className='row'>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>الكود</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.code}</p>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الفواتير</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.invoices}</p>
                 </div>
                 <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#3D63DD'}}>واى فاى</p>
-                    <p className="card-text" style={{color:'#04041b'}}>{card.wifi}</p>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>السعر</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.price}</p>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الكود</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.code}</p>
+                </div>
+                <div className='d-flex justify-content-between col-md-6'>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>واى فاى</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.wifi}</p>
                 </div>
             </div>
             <div className='row'>
                 <div className='d-flex gap-2 mt-2'>
-                    <p className="card-text fw-bold text-end" style={{color:'#3D63DD'}}>العنوان </p>
-                    <p className="card-text fw-bold text-end" style={{color:'#3D63DD'}}>: </p>
-                    <p className="card-text text-end" style={{color:'#04041b'}}>{card.fullAddress}</p>
+                    <p className="card-text fw-bold text-end" style={{color:'#FCDF5F'}}>العنوان </p>
+                    <p className="card-text fw-bold text-end" style={{color:'#FCDF5F'}}>: </p>
+                    <p className="card-text text-end" style={{color:'#fff'}}>{card.fullAddress}</p>
                 </div>
             </div>
             <div className='row justify-content-center'>
-                <div className="btn btn-primary mt-2" style={{width:"150px"}}>
-                    <a href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0" className='text-white ' target='_blank'>تواصل معنا</a>
+                <div className="btn mt-2" style={{width:"150px",backgroundColor:'#FCDF5F'}}>
+                    <a href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0" className='text-dark fw-bold ' target='_blank'>تواصل معنا</a>
                 </div>
             </div>
         </div>
