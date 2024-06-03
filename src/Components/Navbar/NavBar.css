@@ -124,42 +124,14 @@ header{
     }
 }
 
-/*
- @media (max-width:676px) {
-    header{
-        min-height: 50vh;
-    }
-  } */
-  /*
-@media (max-width:569px) {
-    header{
-        height: 45vh !important;
-    }
-  }
-@media (max-width:500px) {
-    header{
-        height: 40vh !important;
-    }
-  }
-
-   */
  @media (max-width:570px) {
-    /* header{
-        min-height: 40vh;
-    } */
     #brand{
         font-size: 15px !important;
     }
     .links a{
-        font-size: 15px !important;
+        font-size: 20px !important;
     }
 } 
-/* @media (max-width:495px) { */
-    /* header{ */
-        /* min-height: 30vh !important; */
-    /* } */
-  /* } */
-
 .overlay{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.342);
@@ -173,9 +145,24 @@ header{
     font-weight: bold;
     color: #000;
 }
-.navbar-toggler{
-    border: none !important;
-}
+.custom-toggler .navbar-toggler-icon {
+    color: #FCDF5F; /* Change to your desired color */
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: none; /* Remove default background image */
+  }
+  
+  .navbar-light .custom-toggler {
+    border: none; /* Change border color if needed */
+  }
+  
+  .custom-toggler-icon {
+    background-image: none;
+    font-size: 1.5rem;
+    color: #FCDF5F;
+  }
+  
 .nav-link{
     font-weight: bold !important;
     transition: all 0.2s;
@@ -183,7 +170,7 @@ header{
 .nav-link::after{
     content: "";
     height: 3px;
-    background-color: rgb(13 110 253);
+    background-color:#FCDF5F;
     bottom: 11px;
     width: 0;
     transition:width .5s ;
