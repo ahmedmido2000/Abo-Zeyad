@@ -2,12 +2,17 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom'
 import "./Cards.css";
 import CardsFile  from "./Cards.json"; 
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos'; // Import AOS
 import Carousel from "react-bootstrap/Carousel";
 const Cards = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
         setCards(CardsFile)
+    }, []);
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
     }, []);
   return (
     <div>
@@ -18,27 +23,27 @@ const Cards = () => {
               الشقق المعروضة
             </h2>
           </div>
-          <div className="row m-auto">
+          <div className="row m-auto" data-aos="fade-up">
           {cards.map(card => (
-            <div className="col-xl-3 col-lg-4 col-md-6 mb-2" key={card.id}>
+            <div className=" col-lg-4 col-md-6 mb-2" key={card.id}>
               <div className="card h-100" style={{ width: "18rem",backgroundColor:'#0D0D0D',border:'2px solid #FCDF5F' }}>
-                <img className="card-img-top" src={card.imageUrl} alt="Card image cap" />
+                <img className="card-img-top" style={{ height:'400px' }} src={card.imageUrl} alt="Card image cap" />
                 <div className="card-body">
                   <h5 className="card-title" style={{color:'#FCDF5F'}}>{card.price}</h5>
                   <p className="card-text text-white">
                   {card.address}
                  </p>
                   <div className="row pt-1 mt-2 border-top">
+                    <div className="col-4" style={{color:'#FCDF5F'}}>نوع السكن</div>
                     <div className="col-4" style={{color:'#FCDF5F'}}>الغرف</div>
                     <div className="col-4 " style={{color:'#FCDF5F'}}>السراير</div>
-                    <div className="col-4" style={{color:'#FCDF5F'}}>الكود</div>
                   </div>
                   <div className="row">
+                    <div className="col-4 text-white">{card.type}</div>
                     <div className="col-4 text-white">{card.rooms}</div>
                     <div className="col-4 text-white">{card.beds}</div>
-                    <div className="col-4 text-white">{card.code}</div>
                   </div>
-                  <NavLink className="btn text-dark" style={{backgroundColor:'#FCDF5F'}} to={`/card/${card.id}`}>معاينة</NavLink>
+                  <NavLink className="btn fw-bold text-dark mt-2" style={{backgroundColor:'#FCDF5F'}} to={`/card/${card.id}`}>معاينة</NavLink>
                 </div>
               </div>
             </div>

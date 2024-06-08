@@ -23,47 +23,57 @@ const CardDetails = () => {
         </Carousel>
         <div className="card-body">
             <div className='row mt-3'>
-                <div className='d-flex justify-content-between col-md-6'>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الكود</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.code}</p>
+                </div>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>نوع السكن</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.type}</p>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
                     <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>عدد الغرف</p>
                     <p className="card-text" style={{color:'#fff'}}>{card.rooms}</p>
                 </div>
-                <div className='d-flex justify-content-between col-md-6'>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
                     <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>عدد السراير</p>
                     <p className="card-text" style={{color:'#fff'}}>{card.beds}</p>
                 </div>
             </div>
             <div className='row'>
-            <div className='d-flex justify-content-between col-md-6'>
+            <div className='d-flex justify-content-between col-md-6 border p-2'>
                     <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الدور</p>
                     <p className="card-text" style={{color:'#fff'}}>{card.floar}</p>
                 </div>
-                <div className='d-flex justify-content-between col-md-6'>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
                     <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>التهوية</p>
                     <p className="card-text" style={{color:'#fff'}}>{card.ventilation}</p>
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex justify-content-between col-md-6'>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
                     <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الفواتير</p>
                     <p className="card-text" style={{color:'#fff'}}>{card.invoices}</p>
                 </div>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>السعر</p>
-                    <p className="card-text" style={{color:'#fff'}}>{card.price}</p>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>نوع الغاز</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.gasType}</p>
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex justify-content-between col-md-6'>
-                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>الكود</p>
-                    <p className="card-text" style={{color:'#fff'}}>{card.code}</p>
+            <div className='d-flex justify-content-between col-md-6 border p-2'>
+                    <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>السعر</p>
+                    <p className="card-text" style={{color:'#fff'}}>{card.price}</p>
                 </div>
-                <div className='d-flex justify-content-between col-md-6'>
+                <div className='d-flex justify-content-between col-md-6 border p-2'>
                     <p className="card-text fw-bold" style={{color:'#FCDF5F'}}>واى فاى</p>
                     <p className="card-text" style={{color:'#fff'}}>{card.wifi}</p>
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex gap-2 mt-2'>
+                <div className='d-flex gap-2 border p-2'>
                     <p className="card-text fw-bold text-end" style={{color:'#FCDF5F'}}>العنوان </p>
                     <p className="card-text fw-bold text-end" style={{color:'#FCDF5F'}}>: </p>
                     <p className="card-text text-end" style={{color:'#fff'}}>{card.fullAddress}</p>
