@@ -23,9 +23,9 @@ const Cards = () => {
               الشقق المعروضة
             </h2>
           </div>
-          <div className="row m-auto" data-aos="fade-up">
+          <div className="row m-auto" >
           {cards.map(card => (
-            <div className=" col-lg-4 col-md-6 mb-2" key={card.id}>
+            <div className=" col-lg-4 col-md-6 mb-2" data-aos="fade-up" key={card.id}>
               <div className="card h-100" style={{ width: "18rem",backgroundColor:'#0D0D0D',border:'2px solid #FCDF5F' }}>
                 <img className="card-img-top" style={{ height:'400px' }} src={card.imageUrl} alt="Card image cap" />
                 <div className="card-body">
