@@ -29,10 +29,10 @@ const Cards = () => {
               <div className="card h-100" style={{ width: "18rem",backgroundColor:'#0D0D0D',border:'2px solid #FCDF5F' }}>
                 <img className="card-img-top" style={{ height:'400px' }} src={card.imageUrl} alt="Card image cap" />
                 <div className="card-body">
-                  <h5 className="card-title" style={{color:'#FCDF5F'}}>{card.price}</h5>
-                  <p className="card-text text-white">
+                  {/* <h5 className="card-title" style={{color:'#FCDF5F'}}>{card.price}</h5> */}
+                  <h5 className="card-text text-white mb-3">
                   {card.address}
-                 </p>
+                 </h5>
                   <div className="row pt-1 mt-2 border-top">
                     <div className="col-4" style={{color:'#FCDF5F'}}>نوع السكن</div>
                     <div className="col-4" style={{color:'#FCDF5F'}}>الغرف</div>
