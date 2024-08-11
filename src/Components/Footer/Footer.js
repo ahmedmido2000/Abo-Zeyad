@@ -18,7 +18,7 @@ const Footer = () => {
            <div className='my-3'>
                 <a target='_blank'  style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp}  /></a>
                 <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram}  /></a>
-                <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://www.facebook.com/profile.php?id=100010113310839&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook}  /></a>
+                <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://www.facebook.com/profile.php?id=61564042859852&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook}  /></a>
                 <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope}  /></a>
             </div>
         <p>COPYRIGHT © 2024. ALL RIGHTS RESERVED. DESIGNED BY AHMED ALI</p>

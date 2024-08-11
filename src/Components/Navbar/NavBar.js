@@ -29,7 +29,7 @@ const NavBar = () => {
               <div className="links">
                 <a target='_blank' style={{color:'#FCDF5F'}} href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a>
                 <a target='_blank' style={{color:'#FCDF5F'}} href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram} /></a>
-                <a target='_blank' style={{color:'#FCDF5F'}} href="https://www.facebook.com/profile.php?id=100010113310839&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a>
+                <a target='_blank' style={{color:'#FCDF5F'}} href="https://www.facebook.com/profile.php?id=61564042859852&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a>
                 <a target='_blank' style={{color:'#FCDF5F'}} href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
               </div>
             </Navbar.Collapse>
