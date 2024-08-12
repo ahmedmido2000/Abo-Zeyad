@@ -98,6 +98,64 @@
 ],
     "imageUrl": "/3D/1.jpg"
   },
+  {
+    "id": 3,
+    "phone":"01008468933",
+    "ownerName":"Dr Mohammed Abdo",
+    "code":"3M",
+    "type":"أولاد",
+    "bedPrice": "500 جنيه",
+    "BookingBybed": " متاح",
+    "avialableBeds": "3",
+    "address": "امام البوابة الاولى",
+    "fullAddress":" امام البوابة الأولى على الشارع الرئيسى",
+    "rooms":3,
+    "beds":7,
+    "floar":"الثانى",
+    "wifi":"نعم",
+    "ventilation":"غير مكيف",
+    "gasType":"أنبوبة",
+    "invoices":"غير شامل كهرباء ونت",
+    "imageList":[
+      "/3M/1.jpeg",
+      "/3M/2.jpeg",
+      "/3M/3.jpeg",
+      "/3M/4.jpeg",
+      "/3M/5.jpeg",
+      "/3M/6.jpeg",
+      "/3M/7.jpeg",
+      "/3M/8.jpeg",
+      "/3M/9.jpeg",
+      "/3M/10.jpeg"
+],
+    "imageUrl": "/3M/8.jpeg"
+  },
+  {
+    "id": 8,
+    "phone":"01098209816",
+    "ownerName":"hag mohamed",
+    "code":"5M",
+    "type":"أولاد",
+    "bedPrice": "400 جنيه",
+    "BookingBybed": "غير متاح",
+    "avialableBeds": "غير متاح",
+    "address": "المساكن  أمام بوابة 5",
+    "fullAddress":"المساكن  أمام بوابة 5",
+    "rooms":3,
+    "beds":8,
+    "floar":"الأرضى",
+    "wifi":"نعم",
+    "ventilation":"غير مكيف",
+    "gasType":"أنبوبة",
+    "invoices":" شامل",
+    "notes":" يتم دفع 350 جنيه خدمات طوال الترم, ومتاح ازالة سريرين وسيكون سعر السرير 450 جنيه",
+    "imageList":[
+      "/5M/1.jpeg",
+      "/5M/2.jpeg",
+      "/5M/3.jpeg"
+],
+    "imageUrl": "/5M/1.jpeg"
+  },
     {
       "id": 1,
       "phone":"01064315353",
@@ -172,38 +230,7 @@
 ],
       "imageUrl": "/2M/3.jpeg"
     },
-    {
-      "id": 3,
-      "phone":"01008468933",
-      "ownerName":"Dr Mohammed Abdo",
-      "code":"3M",
-      "type":"أولاد",
-      "bedPrice": "500 جنيه",
-      "BookingBybed": "غير متاح",
-      "avialableBeds": "غير متاح",
-      "address": "امام البوابة الاولى",
-      "fullAddress":" امام البوابة الأولى على الشارع الرئيسى",
-      "rooms":3,
-      "beds":7,
-      "floar":"الثانى",
-      "wifi":"نعم",
-      "ventilation":"غير مكيف",
-      "gasType":"أنبوبة",
-      "invoices":"غير شامل كهرباء ونت",
-      "imageList":[
-        "/3M/1.jpeg",
-        "/3M/2.jpeg",
-        "/3M/3.jpeg",
-        "/3M/4.jpeg",
-        "/3M/5.jpeg",
-        "/3M/6.jpeg",
-        "/3M/7.jpeg",
-        "/3M/8.jpeg",
-        "/3M/9.jpeg",
-        "/3M/10.jpeg"
-],
-      "imageUrl": "/3M/8.jpeg"
-    },
+
     {
       "id": 4,
       "phone":"01008468933",
@@ -239,4 +266,5 @@
 ],
       "imageUrl": "/4M/8.jpeg"
     }
+
   ]
