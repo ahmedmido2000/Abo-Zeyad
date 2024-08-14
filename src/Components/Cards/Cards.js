@@ -43,7 +43,7 @@ const Cards = () => {
                     <div className="col-4 text-white">{card.rooms}</div>
                     <div className="col-4 text-white">{card.beds}</div>
                   </div>
-                  <NavLink className="btn fw-bold text-dark mt-2" style={{backgroundColor:'#FCDF5F'}} to={`/card/${card.id}`}>معاينة</NavLink>
+                  <NavLink className="btn fw-bold text-dark mt-2" style={{backgroundColor:'#FCDF5F'}} to={`/card/${card.id}`}>عرض التفاصيل</NavLink>
                 </div>
               </div>
             </div>
