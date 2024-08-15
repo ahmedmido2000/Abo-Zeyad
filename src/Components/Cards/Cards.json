@@ -125,6 +125,34 @@
     "imageUrl": "/10SH/1.jpeg"
   },
   {
+    "id": 20,
+    "phone":"01096014794",
+    "ownerName":"mohammed semsar",
+    "code":"11SH",
+    "type":"بنات",
+    "bedPrice": "750 جنيه",
+    "BookingBybed": " غير متاح",
+    "avialableBeds": " غير متاح",
+    "address": "الشؤون عند البنزينة على الرئيسى مباشرة",
+    "fullAddress":"الشؤون عند البنزينة على الرئيسى مباشرة",
+    "rooms":3,
+    "beds":6,
+    "floar":"الثانى",
+    "wifi":"نعم",
+    "ventilation":" مكيف",
+    "gasType":"غاز طبيعى",
+    "notes":"ثلاث غرف: غرفة ثلاث سراير - غرفة سريرين - غرفة سنجل",
+    "invoices":"غير شامل",
+    "imageList":[
+      "/11SH/1.jpeg",
+      "/11SH/2.jpeg",
+      "/11SH/3.jpeg",
+      "/11SH/4.jpeg",
+      "/11SH/5.jpeg"
+],
+    "imageUrl": "/11SH/1.jpeg"
+  },
+  {
     "id": 16,
     "phone":"01061833375",
     "ownerName":"telal",
