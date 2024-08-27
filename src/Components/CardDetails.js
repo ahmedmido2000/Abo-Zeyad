@@ -19,18 +19,29 @@ const CardDetails = () => {
                 backgroundColor: "#0D0D0D",
                 border: "2px solid #FCDF5F",
               }}>
-              <Carousel>
-                {card.imageList.map((img) => (
-                  <Carousel.Item key={img}>
-                    <img
-                      src={img}
-                      className="w-100 img-fluid"
-                      style={{ height: "600px" }}
-                      text="First slide"
-                    />
-                  </Carousel.Item>
-                ))}
-              </Carousel>
+               {card.vedUrl ? (
+                <div className="video-container">
+                  <video
+                    src={card.vedUrl}
+                    controls
+                    className="w-100"
+                    style={{ height: "600px" }}
+                  />
+                </div>
+              ) : (
+                <Carousel>
+                  {card.imageList.map((img) => (
+                    <Carousel.Item key={img}>
+                      <img
+                        src={img}
+                        className="w-100 img-fluid"
+                        style={{ height: "600px" }}
+                        alt="carousel slide"
+                      />
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
+              )}
               <div className="card-body">
                 <div className="row mt-3">
                   <div className="d-flex justify-content-between col-md-6 border p-2">
