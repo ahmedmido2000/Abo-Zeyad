@@ -19,206 +19,109 @@ const CardDetails = () => {
                 backgroundColor: "#0D0D0D",
                 border: "2px solid #FCDF5F",
               }}>
-               {card.vedUrl ? (
-                <div className="video-container">
-                  <video
-                    src={card.vedUrl}
-                    controls
-                    className="w-100"
-                    style={{ height: "600px" }}
-                  />
-                </div>
-              ) : (
-                <Carousel>
-                  {card.imageList.map((img) => (
-                    <Carousel.Item key={img}>
-                      <img
-                        src={img}
-                        className="w-100 img-fluid"
+              {/* if the main url or first image is actually a video file, render a video player */}
+              {(() => {
+                const url = card.imageUrl || (card.imageList && card.imageList[0]) || "";
+                if (url.toLowerCase().endsWith(".mp4")) {
+                  return (
+                    <div className="video-container">
+                      <video
+                        src={url}
+                        controls
+                        className="w-100"
                         style={{ height: "600px" }}
-                        alt="carousel slide"
                       />
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-              )}
-              <div className="card-body">
-                <div className="row mt-3">
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      الكود
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.code}
-                    </p>
-                  </div>
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      نوع السكن
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.type}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      عدد الغرف
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.rooms}
-                    </p>
-                  </div>
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      عدد السراير
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.beds}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      الدور
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.floar}
-                    </p>
-                  </div>
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      التهوية
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.ventilation}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      الفواتير
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.invoices}
-                    </p>
-                  </div>
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      نوع الغاز
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.gasType}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      الحجز بالسرير
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.BookingBybed}
-                    </p>
-                  </div>
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      عدد السراير المتاحة
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.avialableBeds}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      واى فاى
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.wifi}
-                    </p>
-                  </div>
-                  <div className="d-flex justify-content-between col-md-6 border p-2">
-                    <p
-                      className="card-text fw-bold"
-                      style={{ color: "#FCDF5F" }}>
-                      سعر السرير
-                    </p>
-                    <p className="card-text" style={{ color: "#fff" }}>
-                      {card.bedPrice}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="d-flex gap-2 border p-2">
-                    <p
-                      className="card-text fw-bold text-end"
-                      style={{ color: "#FCDF5F" }}>
-                      العنوان{" "}
-                    </p>
-                    <p
-                      className="card-text fw-bold text-end"
-                      style={{ color: "#FCDF5F" }}>
-                      :{" "}
-                    </p>
-                    <p className="card-text text-end" style={{ color: "#fff" }}>
-                      {card.fullAddress}
-                    </p>
-                  </div>
-                </div>
-                {card.notes && (
-                  <div className="row">
-                    <div className="d-flex gap-2 border p-2">
-                      <p
-                        className="card-text fw-bold text-end"
-                        style={{ color: "#FCDF5F" }}>
-                        ملاحظات{" "}
-                      </p>
-                      <p
-                        className="card-text fw-bold text-end"
-                        style={{ color: "#FCDF5F" }}>
-                        :
-                      </p>
-                      <p
-                        className="card-text text-end"
-                        style={{ color: "#fff" }}>
-                        {card.notes}
-                      </p>
                     </div>
-                  </div>
-                )}
+                  );
+                }
+                // otherwise show carousel of images
+                return (
+                  <Carousel>
+                    {card.imageList &&
+                      card.imageList.map((img) => (
+                        <Carousel.Item key={img}>
+                          <img
+                            src={img}
+                            className="w-100 img-fluid"
+                            style={{ height: "600px" }}
+                            alt="carousel slide"
+                          />
+                        </Carousel.Item>
+                      ))}
+                  </Carousel>
+                );
+              })()}
+              <div className="card-body">
+                {/* build a full-width table of available fields */}
+                <div className="table-responsive">
+                  {/* make table background transparent so it doesn't show white */}
+                  <table
+                    className="table text-white mb-0 bg-transparent"
+                    style={{
+                      backgroundColor: "transparent",
+                      border: "1px solid #fff",
+                      borderColor: "#fff",
+                    }}
+                  >
+                    <tbody>
+                      {Object.entries(card)
+                        .filter(
+                          ([key]) =>
+                            ![
+                              "id",
+                              "imageList",
+                              "imageUrl",
+                              "vedUrl",
+                              "phone",
+                              "ownerName",
+                            ].includes(key)
+                        )
+                        .map(([key, value]) => {
+                          if (value === null || value === undefined || value === "") {
+                            return null;
+                          }
+                          const labels = {
+                            code: "الكود",
+                            area: "المساحة",
+                            address: "العنوان",
+                            fullAddress: "العنوان الكامل",
+                            floor: "الدور",
+                            Finish: "التشطيب",
+                          };
+                          const label = labels[key] || key;
+                          return (
+                            <tr
+                              key={key}
+                              className="bg-transparent"
+                              style={{
+                                backgroundColor: "transparent",
+                                borderTop: "1px solid #fff",
+                              }}
+                            >
+                              <th
+                                className="fw-bold bg-transparent"
+                                style={{ color: "#FCDF5F", backgroundColor: "transparent" }}
+                              >
+                                {label}
+                              </th>
+                              <td
+                                className="bg-transparent text-start"
+                                style={{ color: "#fff", backgroundColor: "transparent" }}
+                              >
+                                {value}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                    </tbody>
+                  </table>
+                </div>
                 <div className="row justify-content-center">
                   <div
                     className="btn mt-2"
                     style={{ width: "150px", backgroundColor: "#FCDF5F" }}>
-                    <a
-                      href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"
+                      <a
+                        href="https://wa.me/201142193752"
                       className="text-dark fw-bold "
                       target="_blank">
                       تواصل معنا

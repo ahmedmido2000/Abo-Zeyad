@@ -41,43 +41,74 @@ const Cards = () => {
                     border: "2px solid #FCDF5F",
                   }}
                 >
-                  {card.vedUrl ? (
-                    <div className="video-container">
-                      <video
-                        src={card.vedUrl}
-                        controls
-                        className="w-100"
+                  {/* display video when the url points to an mp4, otherwise image */}
+                  {(() => {
+                    const url = card.imageUrl || "";
+                    if (url.toLowerCase().endsWith(".mp4")) {
+                      return (
+                        <div className="video-container">
+                          <video
+                            src={url}
+                            controls
+                            className="w-100"
+                            style={{ height: "400px" }}
+                          />
+                        </div>
+                      );
+                    }
+                    return (
+                      <img
+                        className="card-img-top"
                         style={{ height: "400px" }}
+                        src={url}
+                        alt="Card image cap"
                       />
-                    </div>
-                  ) : (
-                    <img
-                      className="card-img-top"
-                      style={{ height: "400px" }}
-                      src={card.imageUrl}
-                      alt="Card image cap"
-                    />
-                  )}
+                    );
+                  })()}
                   <div className="card-body">
+                    {/* primary information from the JSON file */}
                     <h5 className="card-text text-white mb-3">
                       {card.address}
                     </h5>
-                    <div className="row pt-1 mt-2 border-top">
-                      <div className="col-4" style={{ color: "#FCDF5F" }}>
-                        نوع السكن
-                      </div>
-                      <div className="col-4" style={{ color: "#FCDF5F" }}>
-                        الغرف
-                      </div>
-                      <div className="col-4" style={{ color: "#FCDF5F" }}>
-                        السراير
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-4 text-white">{card.type}</div>
-                      <div className="col-4 text-white">{card.rooms}</div>
-                      <div className="col-4 text-white">{card.beds}</div>
-                    </div>
+                    {/* build a horizontal row of whatever attributes are present (exclude code) */}
+                    {(() => {
+                      // list of keys we care about and their labels
+                      const attrMap = {
+                        type: "نوع السكن",
+                        rooms: "الغرف",
+                        beds: "السراير",
+                        area: "المساحة",
+                        floor: "الدور",
+                        Finish: "التشطيب",
+                      };
+                      const present = Object.keys(attrMap).filter((k) => card[k]);
+                      if (present.length === 0) return null;
+                      return (
+                        <>
+                          <div className="row pt-1 mt-2 border-top">
+                            {present.map((k) => (
+                              <div
+                                key={k}
+                                className={`col-${12 / present.length}`}
+                                style={{ color: "#FCDF5F" }}
+                              >
+                                {attrMap[k]}
+                              </div>
+                            ))}
+                          </div>
+                          <div className="row">
+                            {present.map((k) => (
+                              <div
+                                key={k}
+                                className={`col-${12 / present.length} text-white`}
+                              >
+                                {card[k]}
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      );
+                    })()}
                     <NavLink
                       className="btn fw-bold text-dark mt-2"
                       style={{ backgroundColor: "#FCDF5F" }}

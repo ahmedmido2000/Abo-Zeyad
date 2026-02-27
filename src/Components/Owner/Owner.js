@@ -11,10 +11,10 @@ const Owner = () => {
       <section className="owner mt-5" id='owner' data-aos="fade-up">
         <div className="owner-text" >
           <h2 className='text-center mb-1'>هل أنت مالك ؟</h2>
-          <p>إذا كنت من ملاك العقارات في محافظة قنا وترغب في تأجيرها للطلاب، فعليك التواصل معنا لعرض العقار الخاص بك على موقعنا.</p>
+          <p>إذا كنت من ملاك العقارات في محافظة قنا وترغب في بيعها ، فعليك التواصل معنا لعرض العقار الخاص بك على موقعنا.</p>
           <div className='text-center'>
             <div className="btn mt-2" style={{backgroundColor:'#FCDF5F'}}>
-              <a href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0" className='text-dark fw-bold' target='_blank'>تواصل معنا</a>
+              <a href="https://wa.me/201142193752" className='text-dark fw-bold' target='_blank' rel="noreferrer">تواصل معنا</a>
             </div>
           </div>
         </div>

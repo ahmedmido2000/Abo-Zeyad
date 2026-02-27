@@ -1,10 +1,15 @@
 footer a{
     color: #fff;
-    background-color: #6195ff;
     padding: 10px 15px;
     border-radius: 5px;
     display: inline-block;
     margin: 5px;
+}
+.designer-link {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
 }
 footer{
     background-color: black;

@@ -9,10 +9,11 @@ body{
     margin-bottom: 0 !important ;
 }
 header{
-    background: url(../../../public/2.webp);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../../public/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    filter: brightness(1.2);
     width: 100%;
     min-height: 100vh;
 }
@@ -144,6 +145,16 @@ header{
     font-size: 25px;
     font-weight: bold;
     color: #000;
+}
+.navbar-logo {
+    height: 60px;
+    border-radius: 12px;
+    filter: brightness(1.1) contrast(1.2) sepia(0.8) saturate(2.5) hue-rotate(5deg);
+}
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 40px;
+    }
 }
 .custom-toggler .navbar-toggler-icon {
     color: #FCDF5F; /* Change to your desired color */

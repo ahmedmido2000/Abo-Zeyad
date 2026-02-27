@@ -8,7 +8,6 @@ const HomePage = () => {
   return (
     <div style={{backgroundColor:'#000'}}>
     <NavBar/>
-    <About/>
     <Cards/>
     <Owner/>
     <Footer/>

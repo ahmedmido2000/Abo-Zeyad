@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp, faTelegram, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faTiktok, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -12,16 +12,15 @@ const Footer = () => {
   }, []);
   return (
     <div>
-        <footer className='text-center'>
+        <footer className='text-center' id='footer'>
         <div  data-aos="fade-up">
-        <h2 className='text-white'>سكن قنا</h2>
+        <h2 className='text-white'>أبو زياد للعقارات</h2>
            <div className='my-3'>
-                <a target='_blank'  style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://api.whatsapp.com/send/?phone=201155170824&text&app_absent=0"><FontAwesomeIcon icon={faWhatsapp}  /></a>
-                <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://t.me/Ahmed17112"><FontAwesomeIcon icon={faTelegram}  /></a>
-                <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://www.facebook.com/profile.php?id=61564042859852&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook}  /></a>
-                <a target='_blank' style={{backgroundColor:'#FCDF5F',color:'#000'}} href="mailto:aa1536198@gmail.com"><FontAwesomeIcon icon={faEnvelope}  /></a>
+                <a target='_blank' rel="noreferrer" style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://wa.me/201142193752"><FontAwesomeIcon icon={faWhatsapp}  /></a>
+                <a target='_blank' rel="noreferrer" style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://www.tiktok.com/@user784956915?_r=1&_t=ZS-94Cg360TfU7"><FontAwesomeIcon icon={faTiktok}  /></a>
+                <a target='_blank' rel="noreferrer" style={{backgroundColor:'#FCDF5F',color:'#000'}} href="https://www.facebook.com/share/1CBsFNH5bW/"><FontAwesomeIcon icon={faFacebook}  /></a>
             </div>
-        <p>COPYRIGHT © 2024. ALL RIGHTS RESERVED. DESIGNED BY AHMED ALI</p>
+        <p>COPYRIGHT © 2026. ALL RIGHTS RESERVED. DESIGNED BY <a href="https://ahmedali-portfolio.vercel.app/" target="_blank" rel="noreferrer" className="designer-link">AHMED ALI</a></p>
         </div>
     </footer>
     </div>
