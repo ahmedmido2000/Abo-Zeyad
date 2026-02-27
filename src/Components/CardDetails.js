@@ -7,7 +7,7 @@ const CardDetails = () => {
   const [card, setCard] = useState(null);
   useEffect(() => {
     setCard(CardsFile.find((card) => card.id === parseInt(id)));
-  }, []);
+  }, [id]);
   return (
     <div className="mb-0 pb-0" style={{ backgroundColor: "#000" }}>
       {card && (
@@ -121,9 +121,10 @@ const CardDetails = () => {
                     className="btn mt-2"
                     style={{ width: "150px", backgroundColor: "#FCDF5F" }}>
                       <a
-                        href="https://wa.me/201142193752"
-                      className="text-dark fw-bold "
-                      target="_blank">
+                          href="https://wa.me/201142193752"
+                        className="text-dark fw-bold "
+                        target="_blank"
+                        rel="noreferrer">
                       تواصل معنا
                     </a>
                   </div>

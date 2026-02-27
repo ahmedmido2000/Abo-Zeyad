@@ -4,14 +4,13 @@ import "./Cards.css";
 import CardsFile from "./Cards.json";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos"; // Import AOS
-import Carousel from "react-bootstrap/Carousel";
 
 const Cards = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
     setCards(CardsFile);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -61,7 +60,7 @@ const Cards = () => {
                         className="card-img-top"
                         style={{ height: "400px" }}
                         src={url}
-                        alt="Card image cap"
+                        alt="card"
                       />
                     );
                   })()}

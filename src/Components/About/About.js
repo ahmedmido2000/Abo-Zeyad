@@ -3,9 +3,10 @@ import './About.css'
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS
 const About = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-      }, []);
+        useEffect(() => {
+                AOS.init({ duration: 1000 });
+            }, []); // only run once
+            // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <div>
             <section className="about" id='about'>

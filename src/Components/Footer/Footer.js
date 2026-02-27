@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faTiktok, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS
 const Footer = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+  // include AOS to appease exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <div>
         <footer className='text-center' id='footer'>

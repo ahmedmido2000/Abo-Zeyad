@@ -5,7 +5,8 @@ import AOS from 'aos'; // Import AOS
 const Owner = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, []);
+  }, []); // run once only
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return (
     <div>
       <section className="owner mt-5" id='owner' data-aos="fade-up">
