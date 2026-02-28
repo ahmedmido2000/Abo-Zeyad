@@ -11,7 +11,7 @@
     },
         {
       "id": 2,
-      "code":"1F",
+      "code":"3SH",
       "area":"80 متر",
       "address": "بالقرب من مسجد اللواء",
       "floor":"أول بلكونة",
@@ -20,5 +20,48 @@
         "/1F/1f.mp4"
 ],
       "imageUrl": "/1F/1f.mp4"
+    },
+            {
+      "id": 3,
+      "code":"2SH",
+      "area":"120 متر",
+      "address": "بالقرب من باتسرى",
+      "floor":"رابع بلكونة على ناصيتين",
+      "Finish":"سوبر لوكس بأسانسير",
+      "imageList":[
+        "/2SH/1.jpeg",
+        "/2SH/2.jpeg",
+        "/2SH/3.jpeg",
+        "/2SH/4.jpeg",
+        "/2SH/5.jpeg",
+        "/2SH/6.jpeg",
+        "/2SH/7.jpeg",
+        "/2SH/8.jpeg",
+        "/2SH/9.jpeg",
+        "/2SH/10.jpeg",
+        "/2SH/11.jpeg",
+        "/2SH/12.jpeg",
+        "/2SH/13.jpeg",
+        "/2SH/14.jpeg",
+        "/2SH/15.jpeg",
+        "/2SH/16.jpeg",
+        "/2SH/17.jpeg",
+        "/2SH/18.jpeg",
+        "/2SH/19.jpeg",
+        "/2SH/20.jpeg"
+],
+      "imageUrl": "/2SH/14.jpeg"
+    },
+            {
+      "id": 4,
+      "code":"4SH",
+      "area":"90 متر",
+      "address": "عزبه داوود عماره خمسه",
+      "floor":"دور أرضى",
+      "Finish":"تشطيب مجلس بأبواب وشبابيك حديد",
+      "imageList":[
+        "/4SH/1.mp4"
+],
+      "imageUrl": "/4SH/1.mp4"
     }
   ]
